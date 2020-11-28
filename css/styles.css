@@ -1,0 +1,15 @@
+.navbar-custom-bg {
+  background-color: #bb0000;
+  height: 120px;
+}
+
+#logo {
+  width: 200px;
+  position: fixed;
+  left: 20px;
+  margin-top: -55px;
+}
+
+#navbar-custom-height {
+  height: 120px;
+}

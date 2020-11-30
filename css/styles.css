@@ -1,6 +1,10 @@
-.navbar-custom-bg {
+.navbar-custom {
   background-color: #bb0000;
   height: 120px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
 }
 
 #logo {
@@ -8,8 +12,4 @@
   position: fixed;
   left: 20px;
   margin-top: -55px;
-}
-
-#navbar-custom-height {
-  height: 120px;
 }

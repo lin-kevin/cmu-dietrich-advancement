@@ -5,6 +5,7 @@
   top: 0;
   z-index: 100;
   width: 100%;
+  opacity: 0.9;
 }
 
 #logo {
@@ -18,4 +19,23 @@
     display: flex;
     width: 100%;
     align-items: stretch;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img:hover {
+  -webkit-filter: brightness(50%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.icon {
+  margin: 10px;
 }

@@ -39,3 +39,11 @@ img:hover {
 .icon {
   margin: 10px;
 }
+
+.contactUsForm{
+  margin-top: 150px;
+  padding-top: 30px;
+  margin-left: 205px;
+  margin-right: 205px;
+  margin-bottom: 100px;
+}

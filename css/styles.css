@@ -61,3 +61,7 @@ img:hover.darken {
 #carouselExampleControls{
   padding-top: 120px;
 }
+
+.footer-text {
+  text-align: center;
+}

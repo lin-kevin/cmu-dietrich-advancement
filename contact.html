@@ -63,42 +63,137 @@
     </nav>
   </div>
 
-  <!--Form-->
+  <!--Form with JS form falidation-->
   <div class="contactUsForm">
-  <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+     <form action = "/action_page.php" name = "myForm" onsubmit = "return(validate());">
+         <table cellspacing = "2" cellpadding = "2" border = "1">
+            <tr>
+               <td align = "right">Name</td>
+               <td><input type = "text" name = "Name" /></td>
+            </tr>
+            <tr>
+               <td align = "right">Organization</td>
+               <td><input type = "text" name = "Organization" /></td>
+            </tr>
+            <tr>
+               <td align = "right">Email</td>
+               <td><input type = "text" name = "Email" /></td>
+            </tr>
+            <tr>
+               <td align = "right">Schedule</td>
+               <td>
+                  <select name = "Month">
+                      <option value = "-1" selected>Month</option>
+                      <option value="1">January</option>
+                      <option value="2">February</option>
+                      <option value="3">March</option>
+                      <option value="4">April</option>
+                      <option value="5">May</option>
+                      <option value="6">June</option>
+                      <option value="7">July</option>
+                      <option value="8">August</option>
+                      <option value="9">September</option>
+                      <option value="10">October</option>
+                      <option value="11">November</option>
+                      <option value="12">December</option>
+                  </select>
+                  <select name = "Day">
+                      <option value = "-1" selected>Day</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="16">16</option>
+                      <option value="17">17</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                      <option value="25">25</option>
+                      <option value="26">26</option>
+                      <option value="27">27</option>
+                      <option value="28">28</option>
+                      <option value="29">29</option>
+                      <option value="30">30</option>
+                      <option value="31">31</option>
+                    </select> 
+                    <select name = "Time">
+                      <option value = "-1" selected>Time</option>
+                      <option value="9am">9 AM</option>
+                      <option value="10am">10 AM</option>
+                      <option value="11am">11 AM</option>
+                      <option value="12pm">12 PM</option>
+                      <option value="1pm">1 PM</option>
+                      <option value="2pm">2 PM</option>
+                      <option value="3pm">3 PM</option>
+                      <option value="4pm">4 PM</option>
+                      <option value="5pm">5 PM</option>
+                  </select> 
+               </td>
+            </tr>
+            <tr>
+               <td align = "right">Description</td>
+               <td><input type = "text" name = "Desc" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right"></td>
+               <td><input type = "submit" value = "Submit" /></td>
+            </tr>
+         </table>
+      </form>   
+
+    <!--link to JS file for JS form validation-->
+    <script type="text/javascript" src="js/form.js">
+     </script>
   </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-</div>
 
   <!--Recruitment-->
-  <div class="container">
-    <h1> Recruitment </h1>
-    <hr>
-    </hr>
-    <div class="row">
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Adam Causgrove</h5>
-            <img src="images\departments.jpg" class="card-img-top" alt="..." height="175">
+  <div class="container-fluid bg-light card-custom" style="margin-top: 30px;">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <img src="images\adamcausgrove.jpg" class="rounded" alt="..." width="250" height="350" style="margin: 15px;">
+                <hr></hr>
+                <p class="card-text">
+                  <p> Adam Causgrove </p>
+                  <p><i>Associate Director of Corporate Relations </i></p>
+                  <a href = "mailto: causgrove@cmu.edu">causgrove@cmu.edu</a>
+                  <br><br>
+                  <p>1 (111) 111 - 1111</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Bio</h5>
+                <p class="card-text">
+                  <p> Originally from Erie, PA, Adam graduated with a BS in Marketing from the University of Pittsburgh in 2006. From there, Adam worked for nine years at Pitt supporting various departments in the Health Sciences before transitioning to Carnegie Mellon to launch the Corporate Relations programs at the Dietrich College of Humanities and Sciences and the Mellon College of Science, transitioning to full-time support of the Dietrich College in 2018.
+                  </p>
+                  <p>
+                  Adam is co-founder and Vice-Chairperson of the Board for Side Project, Inc., a nonprofit organization whose mission is to promote social justice and social change by incubating and developing grassroots projects. Adam also serves as Past-President of NACRO, a leading professional development group for Academic Corporate Relations Officers.
+                  </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
     </div>
-  </div><br><br>
 
   <!--Footer-->
   <div class="container-fluid bg-light" style="padding:30px; margin-top:15px;">

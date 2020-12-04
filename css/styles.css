@@ -32,7 +32,7 @@
   justify-content: center;
 }
 
-img:hover {
+img:hover.darken {
   -webkit-filter: brightness(50%);
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;

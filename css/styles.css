@@ -9,8 +9,8 @@
 }
 
 .navbar-custom-right {
-  float: right;
-  margin: -150px;
+  position: fixed;
+  right: 20px;
 }
 
 #logo {

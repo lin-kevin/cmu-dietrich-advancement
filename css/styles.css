@@ -57,3 +57,7 @@ img:hover {
 .card {
   margin: 10px;
 }
+
+#carouselExampleControls {
+  padding-top: 120px;
+}

@@ -8,6 +8,11 @@
   opacity: 0.9;
 }
 
+.navbar-custom-right {
+  float: right;
+  margin: -150px;
+}
+
 #logo {
   width: 200px;
   position: fixed;

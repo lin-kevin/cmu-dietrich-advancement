@@ -65,3 +65,8 @@ img:hover.darken {
 .footer-text {
   text-align: center;
 }
+
+.biography {
+  font-size: 20px;
+  line-height: 2em;
+}

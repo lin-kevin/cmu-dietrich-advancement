@@ -65,7 +65,7 @@
 
   <!--Form with JS form falidation-->
   <div class="contactUsForm">
-    <form action="/action_page.php" name="myForm" onsubmit="return(validate());">
+    <form name="myForm" onsubmit="return(validate());">
       <table cellspacing="2" cellpadding="2" border="1">
         <tr>
           <td align="right">Name</td>
@@ -162,14 +162,66 @@
     </script>
   </div>
 
+  <!-- temporary form -->
+  <div class="contactUsForm">
+    <form>
+      <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputEmail3">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Confirm email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputEmail3">
+        </div>
+      </div>
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-sm-2 pt-0">I am a...</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+              <label class="form-check-label" for="gridRadios1">
+                Student
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+                Employee
+              </label>
+            </div>
+            <div class="form-check disabled">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+              <label class="form-check-label" for="gridRadios3">
+                Teacher
+              </label>
+            </div>
+            <div class="form-check disabled">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+              <label class="form-check-label" for="gridRadios4">
+                Other
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <span class="d-inline-block" data-toggle="popover" data-content="Not available yet!">
+        <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Sign up</button>
+      </span>
+      <br><br>
+    </form>
+  </div>
+
   <!--Recruitment-->
   <div class="container-fluid bg-light card-custom" style="margin-top: 30px;">
     <div class="row">
-      <div class="col">
+      <div class="col-sm-4">
         <div class="card">
           <div class="card-body">
-            <img src="images\adamcausgrove.jpg" class="rounded" alt="..." width="250" height="350"
-              style="margin: 15px;">
+            <img src="images\adamcausgrove.jpg" class="rounded" alt="..." width="92%" style="margin: 4%">
             <hr>
             </hr>
             <p class="card-text">
@@ -177,13 +229,13 @@
             <p><i>Associate Director of Corporate Relations </i></p>
             <a href="mailto: causgrove@cmu.edu">causgrove@cmu.edu</a>
             <br><br>
-            <p>1 (111) 111 - 1111</p>
+            <p>(412)-268-2830</p>
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-sm-8">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body biography">
             <h5 class="card-title">Bio</h5>
             <p class="card-text">
             <p> Originally from Erie, PA, Adam graduated with a BS in Marketing from the University of Pittsburgh in

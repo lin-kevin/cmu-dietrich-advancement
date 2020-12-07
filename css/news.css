@@ -3,9 +3,8 @@ body {
 }
 
 .content{
-  position: absolute;
-  margin-left: 150px;
-  float: right;
+  position: relative;
+  margin-left: 120px;
 }
 
 .sidenav {

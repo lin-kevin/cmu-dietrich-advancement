@@ -37,7 +37,7 @@
         <a class=" navbar-brand" href="index.html">
           <img src="images/logo.png" id="logo" alt="logo">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        <button class="navbar-toggler navbar-custom-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
           aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -63,119 +63,20 @@
     </nav>
   </div>
 
-  <!--Form with JS form falidation-->
-  <!--<div class="contactUsForm">
-    <form name="myForm" onsubmit="return(validate());">
-      <table cellspacing="2" cellpadding="2" border="1">
-        <tr>
-          <td align="right">Name</td>
-          <td><input type="text" name="Name" style="width: 100%" /></td>
-        </tr>
-        <tr>
-          <td align="right">Organization</td>
-          <td><input type="text" name="Organization" /></td>
-        </tr>
-        <tr>
-          <td align="right">Email</td>
-          <td><input type="text" name="Email" /></td>
-        </tr>
-        <tr>
-          <td align="right">Schedule</td>
-          <td>
-            <select name="Month">
-              <option value="-1" selected>Month</option>
-              <option value="1">January</option>
-              <option value="2">February</option>
-              <option value="3">March</option>
-              <option value="4">April</option>
-              <option value="5">May</option>
-              <option value="6">June</option>
-              <option value="7">July</option>
-              <option value="8">August</option>
-              <option value="9">September</option>
-              <option value="10">October</option>
-              <option value="11">November</option>
-              <option value="12">December</option>
-            </select>
-            <select name="Day">
-              <option value="-1" selected>Day</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-              <option value="13">13</option>
-              <option value="14">14</option>
-              <option value="15">15</option>
-              <option value="16">16</option>
-              <option value="17">17</option>
-              <option value="18">18</option>
-              <option value="19">19</option>
-              <option value="20">20</option>
-              <option value="21">21</option>
-              <option value="22">22</option>
-              <option value="23">23</option>
-              <option value="24">24</option>
-              <option value="25">25</option>
-              <option value="26">26</option>
-              <option value="27">27</option>
-              <option value="28">28</option>
-              <option value="29">29</option>
-              <option value="30">30</option>
-              <option value="31">31</option>
-            </select>
-            <select name="Time">
-              <option value="-1" selected>Time</option>
-              <option value="9am">9 AM</option>
-              <option value="10am">10 AM</option>
-              <option value="11am">11 AM</option>
-              <option value="12pm">12 PM</option>
-              <option value="1pm">1 PM</option>
-              <option value="2pm">2 PM</option>
-              <option value="3pm">3 PM</option>
-              <option value="4pm">4 PM</option>
-              <option value="5pm">5 PM</option>
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <td align="right">Description</td>
-          <td><input type="text" name="Desc" /></td>
-        </tr>
-
-        <tr>
-          <td align="right"></td>
-          <td><input type="submit" value="Submit" /></td>
-        </tr>
-      </table>
-    </form>
-
-    <!--link to JS file for JS form validation-->
-    <!--<script type="text/javascript" src="js/form.js">
-        </script>
-    </div>-->
-
-    <form>
-      <h4>Contact Us</h4>
-      <div class="form-group">
-        <label for="inputName">Name</label>
-        <input type="text" class="form-control" id="inputName" placeholder="Alex Smith">
-      </div>
-      <div class="form-group">
-        <label for="inputOrg">Organization</label>
-        <input type="text" class="form-control" id="inputOrg" placeholder="ABC inc.">
-      </div>
-      <div class="form-group">
-        <label for="inputEmail4">Email</label>
-        <input type="email" class="form-control" id="inputEmail4" placeholder="abc@example.com">
-      </div>
+  <form>
+    <h4>Contact Us</h4>
+    <div class="form-group">
+      <label for="inputName">Name</label>
+      <input type="text" class="form-control" id="inputName" placeholder="Alex Smith">
+    </div>
+    <div class="form-group">
+      <label for="inputOrg">Organization</label>
+      <input type="text" class="form-control" id="inputOrg" placeholder="ABC inc.">
+    </div>
+    <div class="form-group">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="abc@example.com">
+    </div>
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="inputMonth">Schedule</label>
@@ -196,7 +97,7 @@
         </select>
       </div>
       <div class="form-group col-md-3">
-        <label for="inputMonth">.</label>
+        <label for="inputMonth" style = "color: white;">.</label>
         <select id="inputDate" class="form-control">
           <option selected>Date</option>
           <option>1</option>
@@ -233,7 +134,7 @@
         </select>
       </div>
       <div class="form-group col-md-3">
-        <label for="inputMonth">.</label>
+        <label for="inputMonth" style = "color: white;">.</label>
         <select id="inputTime" class="form-control">
           <option selected>Time</option>
           <option>9 AM</option>
@@ -249,8 +150,8 @@
       </div>
     </div>
     <div class="form-group">
-        <label for="inputDesc">Description</label>
-        <input type="text" class="form-control" id="inputDesc" placeholder="Description">
+      <label for="inputDesc">Description</label>
+      <input type="text" class="form-control" id="inputDesc" placeholder="Description">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
@@ -259,7 +160,7 @@
   <div class="adambio">
     <div class="container-fluid bg-light card-custom" style="margin-top: 30px auto;">
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-lg-4 col-md-12 col-sm-12">
           <div class="card">
             <div class="card-body">
               <img src="images\adamcausgrove.jpg" class="rounded" alt="..." width="92%" style="margin: 4%">
@@ -274,14 +175,16 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-8">
+        <div class="col-lg-8 col-md-12 col-sm-12">
           <div class="card">
             <div class="card-body biography">
               <h5 class="card-title">Bio</h5>
               <p class="card-text">
               <p> Originally from Erie, PA, Adam graduated with a BS in Marketing from the University of Pittsburgh in
-                2006. From there, Adam worked for nine years at Pitt supporting various departments in the Health Sciences
-                before transitioning to Carnegie Mellon to launch the Corporate Relations programs at the Dietrich College
+                2006. From there, Adam worked for nine years at Pitt supporting various departments in the Health
+                Sciences
+                before transitioning to Carnegie Mellon to launch the Corporate Relations programs at the Dietrich
+                College
                 of Humanities and Sciences and the Mellon College of Science, transitioning to full-time support of the
                 Dietrich College in 2018.
               </p>

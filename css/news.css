@@ -37,9 +37,18 @@ body {
   padding: 0px 10px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
+@media screen and (max-width: 768px) {
+  .sidenav {padding-top: 15px;
+    display: none;}
   .sidenav a {font-size: 18px;}
+
+  .content{
+  position: absolute;
+  margin-left: 0px;
+  float: right;
+}
+
+
 }
 
 .googleCalendar{

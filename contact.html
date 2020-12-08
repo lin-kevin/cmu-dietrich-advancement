@@ -157,103 +157,180 @@
       </table>
     </form>
 
-    <!--link to JS file for JS form validation-->
+    <!-link to JS file for JS form validation-->
     <!--<script type="text/javascript" src="js/form.js">
         </script>
     </div>-->
 
-    <form>
-      <h4>Contact Us</h4>
-      <div class="form-group">
-        <label for="inputName">Name</label>
-        <input type="text" class="form-control" id="inputName" placeholder="Alex Smith">
-      </div>
-      <div class="form-group">
-        <label for="inputOrg">Organization</label>
-        <input type="text" class="form-control" id="inputOrg" placeholder="ABC inc.">
-      </div>
-      <div class="form-group">
-        <label for="inputEmail4">Email</label>
-        <input type="email" class="form-control" id="inputEmail4" placeholder="abc@example.com">
-      </div>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputMonth">Schedule</label>
-        <select id="inputMonth" class="form-control">
-          <option selected>Month</option>
-          <option>January</option>
-          <option>February</option>
-          <option>March</option>
-          <option>April</option>
-          <option>May</option>
-          <option>June</option>
-          <option>July</option>
-          <option>August</option>
-          <option>September</option>
-          <option>October</option>
-          <option>November</option>
-          <option>December</option>
-        </select>
-      </div>
-      <div class="form-group col-md-3">
-        <label for="inputMonth">.</label>
-        <select id="inputDate" class="form-control">
-          <option selected>Date</option>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6</option>
-          <option>7</option>
-          <option>8</option>
-          <option>9</option>
-          <option>10</option>
-          <option>11</option>
-          <option>12</option>
-          <option>13</option>
-          <option>14</option>
-          <option>15</option>
-          <option>16</option>
-          <option>17</option>
-          <option>18</option>
-          <option>19</option>
-          <option>20</option>
-          <option>21</option>
-          <option>22</option>
-          <option>23</option>
-          <option>24</option>
-          <option>25</option>
-          <option>26</option>
-          <option>27</option>
-          <option>28</option>
-          <option>29</option>
-          <option>30</option>
-          <option>31</option>
-        </select>
-      </div>
-      <div class="form-group col-md-3">
-        <label for="inputMonth">.</label>
-        <select id="inputTime" class="form-control">
-          <option selected>Time</option>
-          <option>9 AM</option>
-          <option>10 AM</option>
-          <option>11 AM</option>
-          <option>12 PM</option>
-          <option>1 PM</option>
-          <option>2 PM</option>
-          <option>3 PM</option>
-          <option>4 PM</option>
-          <option>5 PM</option>
-        </select>
+<script>
+  (function() {
+'use strict';
+window.addEventListener('load', function() {
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+var forms = document.getElementsByClassName('needs-validation');
+// Loop over them and prevent submission
+var validation = Array.prototype.filter.call(forms, function(form) {
+form.addEventListener('submit', function(event) {
+if (form.checkValidity() === false) {
+event.preventDefault();
+event.stopPropagation();
+}
+form.classList.add('was-validated');
+}, false);
+});
+}, false);
+})();</script>
+
+
+
+
+<form class="needs-validation" novalidate>
+   <h4>Contact Us</h4>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom01">First name</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="First name"
+        required>
+      <div class="valid-feedback">
+        Looks good!
       </div>
     </div>
-    <div class="form-group">
-        <label for="inputDesc">Description</label>
-        <input type="text" class="form-control" id="inputDesc" placeholder="Description">
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom02">Last name</label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name"
+        required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+    
+  </div>
+
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom01">Organization</label>
+      <input type="text" class="form-control" id="validationCustom01"
+        required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom01">Email</label>
+      <input type="email" class="form-control" id="validationCustom01" placeholder="example123@email.com"
+        required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    
+  </div>
+
+<br></br>
+
+<h5>Schedule </h5>
+
+<div class="form-row">
+  <div class="form-group">
+    <label for="validationCustom01">Month</label>
+    <select class="custom-select browser-default" required>
+           <option value=""></option>
+          <option value="1">January</option>
+          <option value="2">February</option>
+          <option value="3">March</option>
+          <option value="4">April</option>
+          <option value="5">May</option>
+          <option value="6">June</option>
+          <option value="7">July</option>
+          <option value="8">August</option>
+          <option value="9">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+    </select>
+    <div class="invalid-feedback">Example invalid custom select feedback</div>
+
+    <label for="validationCustom01">Day</label>
+    <select class="custom-select browser-default" required>
+           <option value=""></option>
+           <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+    </select>
+    <div class="invalid-feedback">Example invalid custom select feedback</div>
+
+     <label for="validationCustom01">Time</label>
+    <select class="custom-select browser-default" required>
+           <option value=""></option>
+           <option value="9am">9 AM</option>
+          <option value="10am">10 AM</option>
+          <option value="11am">11 AM</option>
+          <option value="12omp">12 PM</option>
+          <option value="1pm">1 PM</option>
+          <option value="2pm">2 PM</option>
+          <option value="3pm">3 PM</option>
+          <option value="4pm">4 PM</option>
+          <option value="5pm">5 PM</option>
+        </select>
+    </select>
+    <div class="invalid-feedback">Example invalid custom select feedback</div>
+
+  </div>
+</div>
+
+<br></br>
+
+  <div class="form-row">
+    <div class="col-md-8">
+      <label for="validationCustom03">Description</label>
+      <input type="text" class="form-control" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please provide a valid description
+      </div>
+    </div>
+    
+   
+    </div>
+    <br></br>
+ 
+ 
+  <button class="btn btn-primary btn-sm" type="submit">Submit form</button>
+</form>
+
+
+
 
   <!--Bio-->
   <div class="adambio">

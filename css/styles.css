@@ -1,6 +1,6 @@
 .navbar-custom {
   background-color: #bb0000;
-  height: 120px;
+  min-height: 120px;
   position: fixed;
   top: 0;
   z-index: 100;
@@ -13,6 +13,25 @@
   position: fixed;
   right: 20px;
 }
+
+@media only screen and (max-width: 768px)  {
+  .navbar-button-right {
+    position: fixed;
+    right: 20px;
+  }
+
+  #logo {
+    width: 200px;
+    position: fixed;
+    top: 60px;
+  }
+
+  .navbar-custom-right {
+    position: relative;
+    left: 20px;
+    padding-top: 100px;
+  }
+} 
 
 #logo {
   width: 200px;

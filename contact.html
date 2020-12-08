@@ -37,8 +37,9 @@
         <a class=" navbar-brand" href="index.html">
           <img src="images/logo.png" id="logo" alt="logo">
         </a>
-        <button class="navbar-toggler navbar-custom-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-custom-right" type="button" data-toggle="collapse"
+          data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse navbar-custom-right" id="navbarResponsive">
@@ -158,87 +159,75 @@
     </form>
 
     <!-link to JS file for JS form validation-->
-    <!--<script type="text/javascript" src="js/form.js">
+  <!--<script type="text/javascript" src="js/form.js">
         </script>
     </div>-->
 
-<script>
-  (function() {
-'use strict';
-window.addEventListener('load', function() {
-// Fetch all the forms we want to apply custom Bootstrap validation styles to
-var forms = document.getElementsByClassName('needs-validation');
-// Loop over them and prevent submission
-var validation = Array.prototype.filter.call(forms, function(form) {
-form.addEventListener('submit', function(event) {
-if (form.checkValidity() === false) {
-event.preventDefault();
-event.stopPropagation();
-}
-form.classList.add('was-validated');
-}, false);
-});
-}, false);
-})();</script>
+  <script>
+    (function () {
+      'use strict';
+      window.addEventListener('load', function () {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();</script>
 
+  <form class="needs-validation" novalidate>
+    <h5>Contact Us</h5>
+    <div class="form-row">
+      <div class="col-md-6 col-sm-12 mb-3">
+        <label for="validationCustom01">First name</label>
+        <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 mb-3">
+        <label for="validationCustom02">Last name</label>
+        <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
 
+    </div>
 
-
-<form class="needs-validation" novalidate>
-   <h4>Contact Us</h4>
-  <div class="form-row">
-    <div class="col-md-4 mb-3">
-      <label for="validationCustom01">First name</label>
-      <input type="text" class="form-control" id="validationCustom01" placeholder="First name"
-        required>
-      <div class="valid-feedback">
-        Looks good!
+    <div class="form-row">
+      <div class="col-md-6 col-sm-12 mb-3">
+        <label for="validationCustom01">Organization</label>
+        <input type="text" class="form-control" id="validationCustom01" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 mb-3">
+        <label for="validationCustom01">Email</label>
+        <input type="email" class="form-control" id="validationCustom01" placeholder="example123@email.com" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
       </div>
     </div>
-    <div class="col-md-4 mb-3">
-      <label for="validationCustom02">Last name</label>
-      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name"
-        required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-    </div>
-    
-  </div>
 
-  <div class="form-row">
-    <div class="col-md-4 mb-3">
-      <label for="validationCustom01">Organization</label>
-      <input type="text" class="form-control" id="validationCustom01"
-        required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-    </div>
-    
-  </div>
+    <br></br>
 
-  <div class="form-row">
-    <div class="col-md-4 mb-3">
-      <label for="validationCustom01">Email</label>
-      <input type="email" class="form-control" id="validationCustom01" placeholder="example123@email.com"
-        required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-    </div>
-    
-  </div>
+    <h5>Schedule </h5>
 
-<br></br>
-
-<h5>Schedule </h5>
-
-<div class="form-row">
-  <div class="form-group">
-    <label for="validationCustom01">Month</label>
-    <select class="custom-select browser-default" required>
-           <option value=""></option>
+    <div class="form-row">
+      <div class="col-md-4 col-sm-12 mb-3">
+        <label for="validationCustom01">Month</label>
+        <select class="custom-select browser-default" required>
+          <option value=""></option>
           <option value="1">January</option>
           <option value="2">February</option>
           <option value="3">March</option>
@@ -251,13 +240,14 @@ form.classList.add('was-validated');
           <option value="10">October</option>
           <option value="11">November</option>
           <option value="12">December</option>
-    </select>
-    <div class="invalid-feedback">Example invalid custom select feedback</div>
-
-    <label for="validationCustom01">Day</label>
-    <select class="custom-select browser-default" required>
-           <option value=""></option>
-           <option value="1">1</option>
+        </select>
+        <div class="invalid-feedback">Example invalid custom select feedback</div>
+      </div>
+      <div class="col-md-4 col-sm-12 mb-3">
+        <label for="validationCustom01">Day</label>
+        <select class="custom-select browser-default" required>
+          <option value=""></option>
+          <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
@@ -288,13 +278,14 @@ form.classList.add('was-validated');
           <option value="29">29</option>
           <option value="30">30</option>
           <option value="31">31</option>
-    </select>
-    <div class="invalid-feedback">Example invalid custom select feedback</div>
-
-     <label for="validationCustom01">Time</label>
-    <select class="custom-select browser-default" required>
-           <option value=""></option>
-           <option value="9am">9 AM</option>
+        </select>
+        <div class="invalid-feedback">Example invalid custom select feedback</div>
+      </div>
+      <div class="col-md-4 col-sm-12 mb-3">
+        <label for="validationCustom01">Time</label>
+        <select class="custom-select browser-default" required>
+          <option value=""></option>
+          <option value="9am">9 AM</option>
           <option value="10am">10 AM</option>
           <option value="11am">11 AM</option>
           <option value="12omp">12 PM</option>
@@ -303,7 +294,34 @@ form.classList.add('was-validated');
           <option value="3pm">3 PM</option>
           <option value="4pm">4 PM</option>
           <option value="5pm">5 PM</option>
-<!--
+        </select>
+        <div class="invalid-feedback">Example invalid custom select feedback</div>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="col-md-12">
+        <label for="validationCustom03">Description</label>
+        <input type="text" class="form-control" id="validationCustom03" required>
+        <div class="invalid-feedback">
+          Please provide a valid description
+        </div>
+      </div>
+    </div>
+
+    <br></br>
+    <button class="btn btn-primary btn-sm" type="submit">Submit</button>
+  </form>
+
+  <!--
+      FRAGMENTS OF JASMINE'S FORM
+
+    <div class="form-group">
+      <label for="inputDesc">Description</label>
+      <input type="text" class="form-control" id="inputDesc" placeholder="Description">
+    </div>
+    <br></br>
+
   <form>
     <h4>Contact Us</h4>
     <div class="form-group">
@@ -386,39 +404,7 @@ form.classList.add('was-validated');
           <option>2 PM</option>
           <option>3 PM</option>
           <option>4 PM</option>
-          <option>5 PM</option>
-        </select>
-    </select>
-    <div class="invalid-feedback">Example invalid custom select feedback</div>
-  </div>
-</div>
--->
-
-<br></br>
-
-  <div class="form-row">
-    <div class="col-md-8">
-      <label for="validationCustom03">Description</label>
-      <input type="text" class="form-control" id="validationCustom03" required>
-      <div class="invalid-feedback">
-        Please provide a valid description
-      </div>
-    </div>
-    
-   
-<!--
-    <div class="form-group">
-      <label for="inputDesc">Description</label>
-      <input type="text" class="form-control" id="inputDesc" placeholder="Description">
-    </div>
-    <br></br>
--->
- 
-  <button class="btn btn-primary btn-sm" type="submit">Submit form</button>
-</form>
-
-
-
+          <option>5 PM</option>-->
 
   <!--Bio-->
   <div class="adambio">

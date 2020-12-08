@@ -45,40 +45,15 @@ body {
 
 @media screen and (max-width: 768px) {
   .sidenav {
-    padding-top: 15px;
     display: none;
-  }
-
-  .sidenav a {
-    font-size: 18px;
   }
 
   .content{
     position: absolute;
     margin-left: 0px;
-    float:center;
-
+    float: left;
+    width: 100%;
   }
-
-
-  .googleCalendar{
- 
-  height: 50%;
-  width: 50%;
-  padding-bottom: 50%;
-}
-
-.googleCalendar iframe{
- 
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 50%;
-}
-
-
-
-
 }
 
 .googleCalendar{
